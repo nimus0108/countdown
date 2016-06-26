@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -385,6 +391,7 @@ img {
   max-width: 100%; }
 
 body {
+  font-family: Avenir, sans-serif;
   color: #000;
   font-size: 1em;
   line-height: 1.5; }
@@ -395,7 +402,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.25em;
+  font-size: 1.333em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
@@ -408,5 +415,73 @@ a {
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
     color: #104c90; }
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
+.days {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin: 0;
+  padding: 1em;
+  background-color: #FB3426;
+  height: 100vh; }
+  .days:last-child {
+    margin-right: 0; }
+  .days h1 {
+    font-size: 20em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 0 60px #000;
+    margin: 18% 0 0; }
+  .days h3 {
+    font-size: 5em;
+    color: #fff;
+    text-align: center; }
+
+.countdown {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  padding: 0 4em;
+  margin: 0; }
+  .countdown:last-child {
+    margin-right: 0; }
+  .countdown h2 {
+    font-size: 8em;
+    text-align: center;
+    color: #FB3426;
+    -webkit-transform: translateY(650px) rotate(-90deg);
+    -moz-transform: translateY(650px) rotate(-90deg);
+    -ms-transform: translateY(650px) rotate(-90deg);
+    -o-transform: translateY(650px) rotate(-90deg);
+    transform: translateY(650px) rotate(-90deg); }
+
+.time {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin: 0;
+  padding: 1em 5em 0 0; }
+  .time:last-child {
+    margin-right: 0; }
+  .time h2 {
+    margin: 0.1em 0 0;
+    padding: 0;
+    font-size: 10em;
+    font-weight: 900;
+    text-align: right;
+    text-shadow: 0 0 30px #000; }
+  .time h3 {
+    margin: -0.5em 0 0;
+    padding: 0;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
