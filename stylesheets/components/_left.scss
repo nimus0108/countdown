@@ -3,18 +3,22 @@
 	@include media(max-width 660px) { @include span-columns(12); };
 	@include margin(0);
 	@include padding(1em);
+	position: relative;
 	height: 100vh;
 	background-color: $color-secondary;
+
+	.vertical-align {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
 	h1 {
 		font-size: 20em;
 
-		@include media(max-width 1200px) {
-			font-size: 15em;
-		}	
-
 		@include media(max-width 660px) {
-			font-size: 10em;
+			font-size: 15em;
 		}
 
 		font-weight: 900;
@@ -28,9 +32,8 @@
 		color: $color-white;
 		text-align: center;
 
-		@include media(max-width 660px) {
-			font-size: 4em;
-		}
+		@include media(max-width 1200px) { font-size: 4em; }
+		@include media(max-width 660px) { font-size: 3em; }	
 	}
 
 	iframe {

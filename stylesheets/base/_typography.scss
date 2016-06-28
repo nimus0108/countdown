@@ -28,6 +28,6 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: shade($color-action, 25%);
+    color: $color-white;
   }
 }
