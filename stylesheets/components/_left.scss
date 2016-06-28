@@ -1,9 +1,10 @@
 .left {
 	@include span-columns(8);
+	@include media(max-width 660px) { @include span-columns(12); };
 	@include margin(0);
 	@include padding(1em);
-	background-color: $color-secondary;
 	height: 100vh;
+	background-color: $color-secondary;
 
 	h1 {
 		font-size: 20em;
@@ -12,7 +13,7 @@
 			font-size: 15em;
 		}	
 
-		@include media(max-width 480px) {
+		@include media(max-width 660px) {
 			font-size: 10em;
 		}
 
@@ -26,12 +27,19 @@
 		font-size: 5em;
 		color: $color-white;
 		text-align: center;
+
+		@include media(max-width 660px) {
+			font-size: 4em;
+		}
 	}
 
 	iframe {
 		@include padding(0);
-		// @include margin(0 0 0 -16px);
 		float: left;
+
+		@include media(max-width 660px) {
+			display: none;
+		}
 	}
 
 
