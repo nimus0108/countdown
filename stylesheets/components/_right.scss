@@ -12,7 +12,7 @@
 		@include padding(0);
 		font-weight: 900;
 		text-align: right;
-		text-shadow: 0 0 20px $color-black;
+		text-shadow: 0 0 15px $color-black;
 
 		@include media(max-width 1200px) { font-size: 8em; }	
 	}
