@@ -1,2 +1,2 @@
 # countdown
-dlwlrma.xyz
+Simple countdown web app
