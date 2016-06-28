@@ -1,0 +1,38 @@
+.left {
+	@include span-columns(8);
+	@include margin(0);
+	@include padding(1em);
+	background-color: $color-secondary;
+	height: 100vh;
+
+	h1 {
+		font-size: 20em;
+
+		@include media(max-width 1200px) {
+			font-size: 15em;
+		}	
+
+		@include media(max-width 480px) {
+			font-size: 10em;
+		}
+
+		font-weight: 900;
+		text-align: center;
+		text-shadow: 0 0 20px $color-black;
+		@include margin(18% 0 0 0);
+	}
+		
+	h3 {
+		font-size: 5em;
+		color: $color-white;
+		text-align: center;
+	}
+
+	iframe {
+		@include padding(0);
+		// @include margin(0 0 0 -16px);
+		float: left;
+	}
+
+
+}

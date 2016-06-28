@@ -410,15 +410,16 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #1565c0;
+  color: #fff;
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #104c90; }
+    color: #bfbfbf; }
 
-body {
+.countdown {
   overflow-y: hidden;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100vh; }
 
 .left {
   float: left;
@@ -437,29 +438,51 @@ body {
     text-align: center;
     text-shadow: 0 0 20px #000;
     margin: 18% 0 0; }
+    @media screen and (max-width: 1200px) {
+      .left h1 {
+        font-size: 15em; } }
+    @media screen and (max-width: 480px) {
+      .left h1 {
+        font-size: 10em; } }
   .left h3 {
     font-size: 5em;
     color: #fff;
     text-align: center; }
+  .left iframe {
+    padding: 0;
+    float: left; }
 
 .middle {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 6.17215%;
-  padding: 0 4em;
-  margin: 0; }
+  width: -2.35765%;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  display: inline-block; }
   .middle:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 850px) {
+    .middle {
+      display: none; } }
   .middle h2 {
     font-size: 8em;
     text-align: center;
     color: #FB3426;
-    -webkit-transform: translateY(650px) rotate(-90deg);
-    -moz-transform: translateY(650px) rotate(-90deg);
-    -ms-transform: translateY(650px) rotate(-90deg);
-    -o-transform: translateY(650px) rotate(-90deg);
-    transform: translateY(650px) rotate(-90deg); }
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%) rotate(-90deg);
+    -moz-transform: translateX(-40%) translateY(-50%) rotate(-90deg);
+    -ms-transform: translateX(-40%) translateY(-50%) rotate(-90deg);
+    -o-transform: translateX(-40%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-40%) translateY(-50%) rotate(-90deg); }
+    @media screen and (max-width: 1200px) {
+      .middle h2 {
+        font-size: 7em; } }
+    @media screen and (max-width: 480px) {
+      .middle h2 {
+        font-size: 4em; } }
 
 .right {
   float: left;
@@ -467,21 +490,36 @@ body {
   margin-right: 2.35765%;
   width: 23.23176%;
   margin: 0;
-  padding: 1em 5em 0 0; }
+  position: relative;
+  height: 100vh; }
   .right:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 850px) {
+    .right {
+      margin: 0 -3em; } }
   .right h2 {
+    font-size: 10em;
     margin: 0.1em 0 0;
     padding: 0;
-    font-size: 10em;
     font-weight: 900;
     text-align: right;
     text-shadow: 0 0 20px #000; }
+    @media screen and (max-width: 1200px) {
+      .right h2 {
+        font-size: 8em; } }
+    @media screen and (max-width: 480px) {
+      .right h2 {
+        font-size: 2em; } }
   .right h3 {
     margin: -0.5em 0 0;
     padding: 0;
     font-size: 3em;
     font-weight: 900;
     text-align: right; }
+  .right .vertical-align {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */
