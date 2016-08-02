@@ -417,9 +417,16 @@ a {
     color: #fff; }
 
 .countdown {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh; }
+  .countdown::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 .vertical-align {
   position: absolute;

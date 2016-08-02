@@ -1,4 +1,5 @@
 .countdown {
+	@include outer-container;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	height: 100vh;
